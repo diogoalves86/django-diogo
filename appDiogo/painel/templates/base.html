@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	{% block header %}
+		<title>Teste</title>
+		<link rel="stylesheet" type="text/css" href="{% static 'painel/style.css' %}">
+	{% endblock %}
+</head>
+<body>
+	<h1>Base</h1>
+	{% block body %}
+	{% endblock %}
+</body>

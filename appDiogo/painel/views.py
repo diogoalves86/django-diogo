@@ -6,4 +6,7 @@ from django.shortcuts import render, HttpResponse
 # Create your views here.
 
 def home(request):
-	return HttpResponse('Diogo é foda mesmo!')
+	nome = 'Diogo'
+	numeros = [1,2,3.4]
+	args = {'nome': nome, 'numeros':numeros}
+	return render(request, 'painel/login.html', args)
